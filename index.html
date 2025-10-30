@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre Bens: Natureza, Titularidade e Formalismo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eaeaea;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #3498db;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        h3 {
+            color: #2980b9;
+            margin: 20px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .highlight {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .example {
+            background-color: #e8f4fc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .example-title {
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 5px;
+        }
+        
+        .article {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .quiz-container {
+            margin-top: 40px;
+        }
+        
+        .question {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .question p {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .options {
+            margin-left: 20px;
+        }
+        
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        
+        .options input {
+            margin-right: 10px;
+        }
+        
+        .feedback {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        
+        .correct {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .incorrect {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            display: block;
+            margin: 30px auto;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        .result {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .good {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .average {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        
+        .poor {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eaeaea;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bens: Natureza, Titularidade e Formalismo</h1>
+            <p>Uma abordagem sobre a classificação dos bens no Direito Civil brasileiro</p>
+        </header>
+        
+        <section>
+            <h2>Introdução</h2>
+            <p>No Direito Civil, os bens são classificados conforme sua natureza, sendo divididos em três modalidades principais: bens móveis, bens imóveis e bens imateriais. Esta classificação é fundamental para compreender as diferentes formas de aquisição, proteção e transmissão de direitos sobre esses bens.</p>
+            
+            <div class="highlight">
+                <p>Os bens móveis e imóveis são considerados concretos e apropriáveis, enquanto os bens imateriais são abstratos, mas igualmente passíveis de apropriação através de formalização específica.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Classificação dos Bens pela Natureza</h2>
+            
+            <h3>Bens Móveis</h3>
+            <p>São aqueles que podem ser movidos por si próprios ou por força alheia, sem alteração de sua substância ou destinação. Podem ser classificados como:</p>
+            
+            <div class="example">
+                <div class="example-title">Exemplos de bens móveis:</div>
+                <ul>
+                    <li>Veículos automotores</li>
+                    <li>Eletrodomésticos</li>
+                    <li>Joias</li>
+                    <li>Dinheiro</li>
+                    <li>Animais</li>
+                </ul>
+            </div>
+            
+            <h3>Bens Imóveis</h3>
+            <p>São aqueles que não podem ser removidos sem destruição ou alteração de sua substância. Estão vinculados ao solo de forma permanente.</p>
+            
+            <div class="example">
+                <div class="example-title">Exemplos de bens imóveis:</div>
+                <ul>
+                    <li>Terrenos</li>
+                    <li>Edificações (casas, prédios)</li>
+                    <li>Árvores e plantações vinculadas ao solo</li>
+                    <li>Direitos reais sobre imóveis</li>
+                </ul>
+            </div>
+            
+            <h3>Bens Imateriais</h3>
+            <p>São aqueles que não possuem existência física, sendo abstratos, mas que podem ser objeto de direitos e apropriação através de formalização específica.</p>
+            
+            <div class="example">
+                <div class="example-title">Exemplos de bens imateriais:</div>
+                <ul>
+                    <li>Marcas registradas</li>
+                    <li>Patentes</li>
+                    <li>Direitos autorais</li>
+                    <li>Propriedade industrial</li>
+                    <li>Fórmulas e criações industriais</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Titularidade dos Bens</h2>
+            
+            <h3>Posse (Art. 1196, CC)</h3>
+            <p>A posse representa um estágio de titularidade onde a pessoa mantém um vínculo com o bem (móvel ou imóvel) sem necessariamente ostentar a qualidade de proprietário. É um elemento informal que pode ser constituído por situação fática ou contrato.</p>
+            
+            <div class="example">
+                <div class="example-title">Exemplo de posse:</div>
+                <p>Um locatário que aluga um apartamento tem a posse do imóvel, mas não a propriedade. Ele pode usar o bem conforme estabelecido no contrato, mas não pode aliená-lo.</p>
+            </div>
+            
+            <h3>Propriedade (Art. 1228, CC)</h3>
+            <p>A propriedade é o direito mais amplo que se pode ter sobre um bem, conferindo ao titular o poder de usar, gozar, dispor e reivindicar a coisa. Dependendo da natureza do bem, a propriedade pode exigir formalidades específicas para sua aquisição e transmissão.</p>
+            
+            <div class="example">
+                <div class="example-title">Exemplo de propriedade:</div>
+                <p>O proprietário de um terreno registrado em cartório tem o direito de usar, vender, alugar ou hipotecar o imóvel, conforme sua vontade, respeitadas as limitações legais.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Formalismo na Aquisição de Bens</h2>
+            
+            <h3>Bens Móveis Informais</h3>
+            <p>Regidos pelo fenômeno da tradição (Art. 1267, CC), onde a simples entrega do bem ao comprador opera a transferência da titularidade. Não há necessidade de intervenção estatal para que a transação produza efeitos.</p>
+            
+            <div class="example">
+                <div class="example-title">Exemplo:</div>
+                <p>A compra e venda de um livro em uma livraria: com o pagamento e a entrega do exemplar, transfere-se a propriedade sem necessidade de qualquer formalidade adicional.</p>
+            </div>
+            
+            <h3>Bens Móveis Formais</h3>
+            <p>Exigem a presença do Estado para a validade da transação, conforme estabelecido por leis especiais.</p>
+            
+            <div class="example">
+                <div class="example-title">Exemplos de bens móveis formais:</div>
+                <ul>
+                    <li>Automóveis (Código de Trânsito Brasileiro)</li>
+                    <li>Embarcações (Lei de Navios)</li>
+                    <li>Aeronaves (Código Aeronáutico)</li>
+                    <li>Armas de fogo (registro na Polícia Federal)</li>
+                    <li>Obras de arte (declaração à Receita Federal quando acima de determinado valor)</li>
+                    <li>Joias (registro específico em alguns casos)</li>
+                </ul>
+            </div>
+            
+            <h3>Bens Imóveis</h3>
+            <p>São sempre formais, exigindo registro no Cartório de Registro de Imóveis para a validade dos atos de transmissão (Art. 1245, CC).</p>
+            
+            <div class="example">
+                <div class="example-title">Exemplo:</div>
+                <p>A compra e venda de um imóvel exige escritura pública e registro no Cartório de Registro de Imóveis para que o adquirente se torne proprietário perante terceiros.</p>
+            </div>
+            
+            <h3>Bens Imateriais</h3>
+            <p>Dependem de processo de formalização para gerar eficácia, geralmente através de registro em órgãos específicos.</p>
+            
+            <div class="example">
+                <div class="example-title">Exemplo:</div>
+                <p>O INPI (Instituto Nacional da Propriedade Industrial) é o órgão federal responsável pelo registro de marcas, patentes, fórmulas e criações industriais.</p>
+            </div>
+        </section>
+        
+        <section class="article">
+            <h2>Artigo: A Importância do Formalismo na Tutela dos Direitos Reais</h2>
+            
+            <p>O Direito Civil brasileiro estabelece uma distinção fundamental entre bens móveis e imóveis, não apenas pela sua natureza física, mas principalmente pelos regimes jurídicos que lhes são aplicados. Enquanto os bens móveis podem, em regra, ser transferidos pela simples tradição (entrega), os bens imóveis exigem solenidades específicas para a validade dos atos de disposição.</p>
+            
+            <p>Esta diferença de tratamento reflete a importância social e econômica atribuída a cada categoria de bens. Os imóveis, por sua natureza permanente e valor geralmente mais elevado, merecem proteção reforçada através do formalismo registral, que confere publicidade e segurança jurídica às transações.</p>
+            
+            <p>A posse, por sua vez, representa um estágio anterior à propriedade plena, mas que goza de proteção jurídica própria. O possuidor tem direito à defesa de sua posse, independentemente de ser ou não o proprietário, demonstrando que o ordenamento jurídico valoriza a relação fática com a coisa, além da mera titularidade formal.</p>
+            
+            <p>No caso dos bens imateriais, o formalismo assume papel ainda mais relevante, pois trata-se de proteger direitos sobre criações intelectuais e industriais que, por sua natureza abstrata, necessitam de registro para sua individualização e proteção efetiva.</p>
+            
+            <p>Em conclusão, o sistema de classificação e formalismo dos bens no Direito Civil brasileiro busca equilibrar a segurança jurídica necessária às relações patrimoniais com a flexibilidade exigida pela circulação de riquezas, adaptando-se às peculiaridades de cada categoria de bem.</p>
+        </section>
+        
+        <section class="quiz-container">
+            <h2>Quiz: Teste seus conhecimentos</h2>
+            
+            <form id="quiz-form">
+                <div class="question" id="q1">
+                    <p>1. Qual artigo do Código Civil define a posse?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> a) Art. 1228</label>
+                        <label><input type="radio" name="q1" value="b"> b) Art. 1196</label>
+                        <label><input type="radio" name="q1" value="c"> c) Art. 1267</label>
+                        <label><input type="radio" name="q1" value="d"> d) Art. 1245</label>
+                    </div>
+                    <div class="feedback" id="fb1"></div>
+                </div>
+                
+                <div class="question" id="q2">
+                    <p>2. Qual é a característica marcante dos bens imóveis e móveis em relação à titularidade?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="a"> a) São sempre informais</label>
+                        <label><input type="radio" name="q2" value="b"> b) Possibilidade de apoderamento</label>
+                        <label><input type="radio" name="q2" value="c"> c) Não podem ser objeto de posse</label>
+                        <label><input type="radio" name="q2" value="d"> d) Exigem sempre registro público</label>
+                    </div>
+                    <div class="feedback" id="fb2"></div>
+                </div>
+                
+                <div class="question" id="q3">
+                    <p>3. O que diferencia a posse da propriedade?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="a"> a) A posse sempre exige formalidade, a propriedade não</label>
+                        <label><input type="radio" name="q3" value="b"> b) A propriedade é um direito mais amplo que a posse</label>
+                        <label><input type="radio" name="q3" value="c"> c) A posse só existe para bens móveis</label>
+                        <label><input type="radio" name="q3" value="d"> d) A propriedade não precisa de registro</label>
+                    </div>
+                    <div class="feedback" id="fb3"></div>
+                </div>
+                
+                <div class="question" id="q4">
+                    <p>4. Como são classificados os bens móveis que necessitam de formalidade para transferência?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> a) Bens móveis informais</label>
+                        <label><input type="radio" name="q4" value="b"> b) Bens móveis formais</label>
+                        <label><input type="radio" name="q4" value="c"> c) Bens imateriais</label>
+                        <label><input type="radio" name="q4" value="d"> d) Bens fungíveis</label>
+                    </div>
+                    <div class="feedback" id="fb4"></div>
+                </div>
+                
+                <div class="question" id="q5">
+                    <p>5. Qual é o fenômeno que rege a transferência de bens móveis informais?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="a"> a) Registro</label>
+                        <label><input type="radio" name="q5" value="b"> b) Usucapião</label>
+                        <label><input type="radio" name="q5" value="c"> c) Tradição</label>
+                        <label><input type="radio" name="q5" value="d"> d) Adjudicação</label>
+                    </div>
+                    <div class="feedback" id="fb5"></div>
+                </div>
+                
+                <div class="question" id="q6">
+                    <p>6. Qual órgão é responsável pelo registro de marcas e patentes no Brasil?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q6" value="a"> a) Receita Federal</label>
+                        <label><input type="radio" name="q6" value="b"> b) INPI</label>
+                        <label><input type="radio" name="q6" value="c"> c) Cartório de Registro de Imóveis</label>
+                        <label><input type="radio" name="q6" value="d"> d) Polícia Federal</label>
+                    </div>
+                    <div class="feedback" id="fb6"></div>
+                </div>
+                
+                <div class="question" id="q7">
+                    <p>7. Qual artigo do Código Civil trata da propriedade?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q7" value="a"> a) Art. 1196</label>
+                        <label><input type="radio" name="q7" value="b"> b) Art. 1228</label>
+                        <label><input type="radio" name="q7" value="c"> c) Art. 1245</label>
+                        <label><input type="radio" name="q7" value="d"> d) Art. 1267</label>
+                    </div>
+                    <div class="feedback" id="fb7"></div>
+                </div>
+                
+                <div class="question" id="q8">
+                    <p>8. Qual das seguintes alternativas NÃO é um exemplo de bem móvel formal?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q8" value="a"> a) Automóvel</label>
+                        <label><input type="radio" name="q8" value="b"> b) Arma de fogo</label>
+                        <label><input type="radio" name="q8" value="c"> c) Livro</label>
+                        <label><input type="radio" name="q8" value="d"> d) Aeronave</label>
+                    </div>
+                    <div class="feedback" id="fb8"></div>
+                </div>
+                
+                <div class="question" id="q9">
+                    <p>9. O que caracteriza os bens imateriais?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q9" value="a"> a) São concretos e apropriáveis</label>
+                        <label><input type="radio" name="q9" value="b"> b) São abstratos e dependem de formalização</label>
+                        <label><input type="radio" name="q9" value="c"> c) São sempre móveis</label>
+                        <label><input type="radio" name="q9" value="d"> d) Não podem ser objeto de direitos</label>
+                    </div>
+                    <div class="feedback" id="fb9"></div>
+                </div>
+                
+                <div class="question" id="q10">
+                    <p>10. Qual é a regra para a transferência de bens imóveis?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q10" value="a"> a) Basta a tradição</label>
+                        <label><input type="radio" name="q10" value="b"> b) É sempre informal</label>
+                        <label><input type="radio" name="q10" value="c"> c) Exige formalidade (registro)</label>
+                        <label><input type="radio" name="q10" value="d"> d) Pode ser feita por contrato verbal</label>
+                    </div>
+                    <div class="feedback" id="fb10"></div>
+                </div>
+                
+                <div class="question" id="q11">
+                    <p>11. O que é a propriedade resolúvel?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q11" value="a"> a) Propriedade que não pode ser transferida</label>
+                        <label><input type="radio" name="q11" value="b"> b) Propriedade que necessita de condição para se aperfeiçoar</label>
+                        <label><input type="radio" name="q11" value="c"> c) Propriedade sobre bens imateriais</label>
+                        <label><input type="radio" name="q11" value="d"> d) Propriedade que não gera direitos</label>
+                    </div>
+                    <div class="feedback" id="fb11"></div>
+                </div>
+                
+                <div class="question" id="q12">
+                    <p>12. Em que situação a posse pode exigir formalidade?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q12" value="a"> a) Nunca, a posse é sempre informal</label>
+                        <label><input type="radio" name="q12" value="b"> b) Quando o contrato for longevo (ex: contrato de safra)</label>
+                        <label><input type="radio" name="q12" value="c"> c) Apenas para bens imóveis</label>
+                        <label><input type="radio" name="q12" value="d"> d) Apenas para bens móveis</label>
+                    </div>
+                    <div class="feedback" id="fb12"></div>
+                </div>
+                
+                <div class="question" id="q13">
+                    <p>13. Qual das alternativas representa um exemplo de bem imaterial?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q13" value="a"> a) Um terreno</label>
+                        <label><input type="radio" name="q13" value="b"> b) Um veículo</label>
+                        <label><input type="radio" name="q13" value="c"> c) Uma patente</label>
+                        <label><input type="radio" name="q13" value="d"> d) Uma joia</label>
+                    </div>
+                    <div class="feedback" id="fb13"></div>
+                </div>
+                
+                <div class="question" id="q14">
+                    <p>14. O que acontece com o vendedor após a tradição de um bem móvel informal?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q14" value="a"> a) Continua responsável pela coisa</label>
+                        <label><input type="radio" name="q14" value="b"> b) Passa a não se responsabilizar pela coisa transmitida</label>
+                        <label><input type="radio" name="q14" value="c"> c) Precisa registrar a venda</label>
+                        <label><input type="radio" name="q14" value="d"> d) Mantém a posse direta do bem</label>
+                    </div>
+                    <div class="feedback" id="fb14"></div>
+                </div>
+                
+                <div class="question" id="q15">
+                    <p>15. Qual é a principal característica dos bens imóveis em relação ao formalismo?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q15" value="a"> a) São sempre informais</label>
+                        <label><input type="radio" name="q15" value="b"> b) Podem ser transferidos por tradição</label>
+                        <label><input type="radio" name="q15" value="c"> c) São sempre formais</label>
+                        <label><input type="radio" name="q15" value="d"> d) Não precisam de registro</label>
+                    </div>
+                    <div class="feedback" id="fb15"></div>
+                </div>
+                
+                <div class="question" id="q16">
+                    <p>16. O que é necessário para a aquisição da propriedade móvel pelo exercício contínuo da posse?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q16" value="a"> a) Registro no cartório</label>
+                        <label><input type="radio" name="q16" value="b"> b) Usucapião</label>
+                        <label><input type="radio" name="q16" value="c"> c) Tradição</label>
+                        <label><input type="radio" name="q16" value="d"> d) Formalização contratual</label>
+                    </div>
+                    <div class="feedback" id="fb16"></div>
+                </div>
+                
+                <div class="question" id="q17">
+                    <p>17. Qual das seguintes situações caracteriza posse e não propriedade?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q17" value="a"> a) Dono de um imóvel registrado</label>
+                        <label><input type="radio" name="q17" value="b"> b) Locatário de um apartamento</label>
+                        <label><input type="radio" name="q17" value="c"> c) Herdeiro de um terreno</label>
+                        <label><input type="radio" name="q17" value="d"> d) Comprador de um veículo com documento assinado</label>
+                    </div>
+                    <div class="feedback" id="fb17"></div>
+                </div>
+                
+                <div class="question" id="q18">
+                    <p>18. Qual artigo do Código Civil trata da tradição?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q18" value="a"> a) Art. 1196</label>
+                        <label><input type="radio" name="q18" value="b"> b) Art. 1228</label>
+                        <label><input type="radio" name="q18" value="c"> c) Art. 1245</label>
+                        <label><input type="radio" name="q18" value="d"> d) Art. 1267</label>
+                    </div>
+                    <div class="feedback" id="fb18"></div>
+                </div>
+                
+                <div class="question" id="q19">
+                    <p>19. O que diferencia bens móveis formais de informais?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q19" value="a"> a) Os formais exigem intervenção estatal</label>
+                        <label><input type="radio" name="q19" value="b"> b) Os informais são sempre mais valiosos</label>
+                        <label><input type="radio" name="q19" value="c"> c) Os formais não podem ser objeto de posse</label>
+                        <label><input type="radio" name="q19" value="d"> d) Os informais exigem registro</label>
+                    </div>
+                    <div class="feedback" id="fb19"></div>
+                </div>
+                
+                <div class="question" id="q20">
+                    <p>20. Qual é a consequência de não observar o formalismo na transmissão de bens imóveis?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q20" value="a"> a) O ato é válido, mas não oponível a terceiros</label>
+                        <label><input type="radio" name="q20" value="b"> b) O ato é inexistente</label>
+                        <label><input type="radio" name="q20" value="c"> c) O ato é válido apenas entre as partes</label>
+                        <label><input type="radio" name="q20" value="d"> d) O ato gera apenas posse</label>
+                    </div>
+                    <div class="feedback" id="fb20"></div>
+                </div>
+                
+                <button type="button" id="submit-btn">Verificar Resultado</button>
+            </form>
+            
+            <div class="result" id="quiz-result"></div>
+        </section>
+        
+        <footer>
+            <p>Aula sobre Bens: Natureza, Titularidade e Formalismo</p>
+            <p>Desenvolvido para fins educacionais</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            // Respostas corretas
+            const correctAnswers = {
+                q1: 'b',
+                q2: 'b',
+                q3: 'b',
+                q4: 'b',
+                q5: 'c',
+                q6: 'b',
+                q7: 'b',
+                q8: 'c',
+                q9: 'b',
+                q10: 'c',
+                q11: 'b',
+                q12: 'b',
+                q13: 'c',
+                q14: 'b',
+                q15: 'c',
+                q16: 'b',
+                q17: 'b',
+                q18: 'd',
+                q19: 'a',
+                q20: 'b'
+            };
+            
+            // Comentários para questões incorretas
+            const comments = {
+                q1: "O artigo 1196 do Código Civil define a posse como o exercício de fato de algum dos poderes inerentes à propriedade.",
+                q2: "A possibilidade de apoderamento é característica marcante dos bens móveis e imóveis, permitindo que o titular realize atos de uso fundamentado na sua presunção ou contrato.",
+                q3: "A propriedade é um direito mais amplo que a posse, conferindo ao titular poderes de uso, gozo, disposição e reivindicação da coisa.",
+                q4: "Bens móveis formais são aqueles que necessitam da presença do Estado para validar a transação, conforme estabelecido por leis especiais.",
+                q5: "A tradição (art. 1267, CC) é o fenômeno que rege a transferência de bens móveis informais, consistindo na simples entrega do bem.",
+                q6: "O INPI (Instituto Nacional da Propriedade Industrial) é o órgão federal responsável pelo registro de marcas, patentes, fórmulas e criações industriais.",
+                q7: "O artigo 1228 do Código Civil trata da propriedade, definindo os direitos do proprietário.",
+                q8: "O livro é um exemplo de bem móvel informal, que não exige formalidade específica para sua transferência.",
+                q9: "Os bens imateriais são abstratos e dependem de processo de formalização para gerar eficácia, como registro no INPI.",
+                q10: "Os bens imóveis exigem sempre formalidade (registro no Cartório de Registro de Imóveis) para a validade dos atos de transmissão.",
+                q11: "A propriedade resolúvel é aquela que necessita de uma condição para se aperfeiçoar plenamente.",
+                q12: "A posse pode exigir formalidade quando o contrato for longevo, como nos casos de contrato de safra e de superfície.",
+                q13: "Uma patente é um exemplo de bem imaterial, pois representa um direito sobre uma criação intelectual.",
+                q14: "Após a tradição de um bem móvel informal, o vendedor passa a não se responsabilizar pela coisa transmitida, não podendo sofrer constrição judicial.",
+                q15: "Os bens imóveis são sempre formais, exigindo registro para a validade dos atos de transmissão (art. 1245, CC).",
+                q16: "A usucapião é a forma de aquisição da propriedade pelo exercício contínuo da posse, conforme estabelecido no Código Civil.",
+                q17: "O locatário de um apartamento tem a posse do imóvel, mas não a propriedade, que permanece com o locador.",
+                q18: "O artigo 1267 do Código Civil trata da tradição como forma de transferência de bens móveis.",
+                q19: "Bens móveis formais exigem intervenção estatal para validar a transação, enquanto os informais não.",
+                q20: "De acordo com o art. 1245 do Código Civil, se o ato de transmissão de bem imóvel não for formal, torna-se inexistente."
+            };
+            
+            let score = 0;
+            const totalQuestions = Object.keys(correctAnswers).length;
+            
+            // Verificar respostas e mostrar feedback
+            for (let i = 1; i <= totalQuestions; i++) {
+                const questionId = 'q' + i;
+                const selectedOption = document.querySelector(`input[name="${questionId}"]:checked`);
+                const feedbackElement = document.getElementById('fb' + i);
+                
+                if (selectedOption) {
+                    if (selectedOption.value === correctAnswers[questionId]) {
+                        score++;
+                        feedbackElement.textContent = "Resposta correta!";
+                        feedbackElement.className = "feedback correct";
+                    } else {
+                        feedbackElement.textContent = comments[questionId];
+                        feedbackElement.className = "feedback incorrect";
+                    }
+                    feedbackElement.style.display = 'block';
+                } else {
+                    feedbackElement.textContent = "Por favor, selecione uma resposta.";
+                    feedbackElement.className = "feedback incorrect";
+                    feedbackElement.style.display = 'block';
+                }
+            }
+            
+            // Mostrar resultado
+            const resultElement = document.getElementById('quiz-result');
+            const percentage = (score / totalQuestions) * 100;
+            
+            let message = `Você acertou ${score} de ${totalQuestions} questões (${percentage.toFixed(1)}%). `;
+            
+            if (percentage >= 80) {
+                message += "Excelente! Você demonstrou um ótimo entendimento sobre o tema.";
+                resultElement.className = "result good";
+            } else if (percentage >= 60) {
+                message += "Bom! Você tem um conhecimento satisfatório, mas pode melhorar em alguns aspectos.";
+                resultElement.className = "result average";
+            } else {
+                message += "Estude um pouco mais o conteúdo para solidificar seu conhecimento.";
+                resultElement.className = "result poor";
+            }
+            
+            resultElement.textContent = message;
+            resultElement.style.display = 'block';
+            
+            // Rolagem suave para o resultado
+            resultElement.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
